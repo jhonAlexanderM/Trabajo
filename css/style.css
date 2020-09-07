@@ -1,0 +1,341 @@
+
+	* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+header {
+	width:80%; /* Establecemos que el header abarque el 100% del documento */
+        height="10%" 
+	overflow:hidden; /* Eliminamos errores de float */
+	
+	margin-bottom:10px;
+}
+ .boton{
+  background: WHITE;
+  padding: 0.4% 1%;
+  border-radius: 2px;
+  text-align: right;
+  top: 10px;
+ }
+
+.inicio{
+	height: 100px;
+	background: #fff;
+	color: #626262;
+	font-size: 12px;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: 6px;
+	left: 90px;
+	cursor: pointer;
+}
+
+.menu li{
+	float: left;
+	margin-right: 20px;
+}
+.lineaMenu{
+	position: relative;
+	top: 2px;
+	background: #626262;
+	height: 11px;
+	width: 1.5px;
+}
+.buscar{
+	position: relative;
+	top: 2px;
+	left: 100px;
+}
+.buscar input{
+	width: 102px;
+	background: #f1f3f6;
+	font-style: italic;
+	padding-left: 10px;
+	border-radius: 2px;
+}
+.icono{
+	position: relative;
+	top: 4px;
+	right: 30px;
+	color: #c1c1c1;
+	font-size: 18px;
+}
+
+.wrap {
+	width:100%; /* Establecemos que el ancho sera del 90% */
+	/*max-width:1000px;  Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:0 auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	color:#081746
+	height=100%
+}
+.wrap1 {
+	width:100%; /* Establecemos que el ancho sera del 90% */
+	/*max-width:1000px;  Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:0 auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	color:;
+}
+index-banner{
+	color:#232121;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+}
+ 
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+}
+ 
+header nav {
+	float:right;
+	line-height:200px;
+}
+ 
+header nav a {
+	display:inline-block;
+	color:#FFF;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+}
+* {
+margin: 0px;
+padding: 0px;
+
+}
+
+
+#menu{
+  background: #031344;
+  padding: 0.4% 1%;
+  border-radius: 0px;
+  text-align: center;
+  top: 30px;
+ }
+ #cuerpo{
+  background: #ffffff;
+  padding: 0.4% 1%;
+  border-radius: 0px;
+  text-align: center;
+  top: 30px;
+ }
+  #boton{
+  background: BLACK;
+  padding: 0.4% 1%;
+  border-radius: 0px;
+  text-align: center;
+  top: 30px;
+ }
+  #Consulta{
+  background: WHITE;
+  padding: 0.4% 1%;
+  border-radius: 0px;
+  text-align: center;
+  top: 30px;
+ }
+  #hola{
+  background: SILVER;
+  padding: 0.4% 1%;
+  border-radius: 0px;
+  text-align: ;
+  top: 30px;
+ }
+  #piedepg{
+  background: #031344;
+  padding: 0.4% 1%;
+  border-radius: 0px;
+  text-align: ;
+  top: 30px;
+ }
+ li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+  font: bold 14px "3dumbregular", verdana,sans-serif;
+}
+ 
+ #agrupar{
+  width: 95%; 
+  margin: 10px auto;
+  text-align: left;;
+
+}
+
+body{
+   
+  background: #fff;
+   	color: GREY;
+    margin: 3;
+    padding: 0;
+    font-family:   italic normal  Verdana, Geneva, sans-serif;
+}
+
+h1{
+  font:  italic normal bold 20px Verdana, Geneva, sans-serif;
+  color:black;
+}
+
+h2{
+  font:  italic normal bold 14px Verdana, Geneva, sans-serif;
+  color:black;
+}
+
+
+section {
+ width: 70%;
+ margin: 20px;
+ float: left;
+ color: GREY;
+}
+
+aside {
+  width: 20%;
+  margin: 20px 1%;
+  
+  float: right;
+  
+
+ border: 0px solid #999999;
+
+ }
+
+ footer{
+ clear: both;
+ background: #CCCCCC;
+ text-align: center;
+ padding: 20px;
+ border-top: 2px solid #999999;
+
+}
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}	
+.social {
+	float:right;
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 1px solid #0000ff;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}

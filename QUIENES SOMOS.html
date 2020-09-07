@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("images/mascotas.png");
+
+    /* Set a specific height */
+    min-height: 450px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+
+
+<style>
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.color{
+text-align: center;
+  background-color: #656D7C;
+  padding: 2px 16px;
+  color: blue;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+</style>
+
+
+
+<!----------------------------------------------------------->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabajo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color: #E8EDFD;
+    border: solid 1px #031344;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+	
+	.color{
+text-align: center;
+  background-color: #4D6BBF;
+  padding: 2px 16px;
+  color: blue;
+}
+}
+</style>
+
+</head>
+
+<body>
+	
+		</header class="inicio">
+		
+		<nav id="menu">
+   			<header>
+   			<ul>
+<a href="index.html" height="100%"><img src="images/logo1.png" ></a>
+			 
+			 
+		 <li></li>
+		 <li></li>
+		  <li></li> 
+		<span class="color"> <a href="INICIO.html"><font  color="white"><li>Inicio</li></a></font></span>
+   				<span class="color"> <a href="INICIO.html"><a href="QUIENES SOMOS.html"><font color="white"><li>¿Quienes somos?</li></a></font></span>
+				<span class="color"> <a href="INICIO.html"><a href="NOMBRES MASCOTAS.html"><font color="white"><li>Nombres mascotas</li></a></font></span>
+				<span class="color"> <a href="INICIO.html"><a href="TU MASCOTA IDEAL.html"><font color="white"><li>Tu mascota ideal</li></a></font></span>
+				
+				
+			
+
+   			</ul>
+   			
+				</header>
+		</nav>
+   		
+		  
+    <div id="flip" color="white"><FONT color="BLack" >¿Quienes somos?↑↓ </FONT></div>
+<div id="panel">
+<FONT color="BLack" >Somos una comunidad virtual que te<br>
+ ayuda a escoger la mascota ideal para ti.<br>
+ según tus hábitos, gustos, estilo de vida<br>
+ y entorno sabrás  tu mascota ideal. Tambien podrás<br>
+ ver nombres que se adecuan a tu mascota<br>
+ e interactuar en nuestra pagina.</FONT><br>
+ 
+ <a href="index.html" height="80%"><img src="images/perro.png" ></a>
+ </div>
+	
+	  	<div class="wrap">
+				 <article style="position:relative; opacity: 1;"> 
+				   	<div class="cuerpo">
+						<div class="cont span_2_of_3">
+						   
+						
+ <li></li>
+		 <li></li>
+		  <li></li> 
+						</h1>
+</div>
+						
+		    		</div>
+						 <div class="parallax"></div>
+				 </article>
+            </div>  
+
+<center><hr align="left" width="100%" size="7" noshade>	</center>
+		<br>
+		
+
+				 <div style="visibility: hidden"></div>
+ <b><H1><pre><MARQUEE BGCOLOR="#E8EDFD">  Galeria de mascotas</MARQUEE>  </pre>  </H1></b>
+ <br>
+		<br>
+		<br>
+<div class="row">
+  <div class="column">
+    <img src="galeria/m1.png" style="width:80%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="galeria/m2.png" style="width:80%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="galeria/m3.png" style="width:80%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="galeria/m4.png" style="width:80%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="column">
+  
+    <img src="galeria/m8.png" style="width:80%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="galeria/m6.png" style="width:80%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="galeria/m7.png" style="width:80%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="galeria/m10.png" style="width:80%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="mosaico/m1.png" style="width:80%,height=50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="mosaico/m2.png" style="width:80%,height=50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="mosaico/m3.png" style="width:80%,height=50%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="mosaico/m4.png" style="width:80%,height=50%">
+    </div>
+	
+	
+	<div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="mosaico/m8.png" style="width:80%,height=50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="mosaico/m6.png" style="width:80%,height=50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="mosaico/m7.png" style="width:80%,height=50%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="mosaico/m10.png" style="width:80% ,height=30%">
+    </div>
+	
+	
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m1.png" style="width:100% " onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m2.png" style="width:100% " onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m3.png" style="width:85%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="mosaico/m8.png" style="width:100% " onclick="currentSlide(5)" alt="Nature and su">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m6.png" style="width:100% " onclick="currentSlide(6)" alt="Trolltunga, Nor">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m7.png" style="width:85%" onclick="currentSlide(7)" alt="Mountains and fjord">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mosaico/m10.png" style="width:100%" onclick="currentSlide(8)" alt="Northern Ligh">
+    </div>
+	
+	
+	
+	
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    		
+				
+				
+	
+			</div>
+		   </div>
+</div>
+		
+	      
+ 
+
+      
+   </div>
+ <!---728x90--->
+ <nav id="piedepg">
+   <div class="piedepg">
+   	    <div class="wrap">
+   	    	<br><br>
+			<center>
+				<a href="CONTACTO.html"><font color="WHITE">Pongase en contacto con nosotros|</a>
+					<a href="PREGUNTAS.html"><font color="WHITE">Preguntas frecuentes| </a>
+									<a href="https://twitter.com/MYPET_MYPET">	<font  color="WHITE">Twitter|</a> 
+					<a href="POLITICA.html"><font color="WHITE">Politica de privacidad | </a>
+					<a href="TERMINOS.html"><font color="WHITE">terminos de uso</a>
+					</center>
+					<br><br>
+					<br>
+				<ul>
+				<div class="copy">
+			     <center> <font color="WHITE"> © 2017 MYPET. All rights reserved </center><br>
+		        </div>
+			</ul>
+			
+		   
+   </div>
+   </nav>
+</body>
+</html>
